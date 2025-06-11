@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding:0 ;
+}
+
+body{
+    background-image: url(../assets/sobre-solume/foto\ interior.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    justify-content: space-between;
+    position: sticky;
+    background-color: rgba(255, 255, 255, 0.786); 
+    padding: 20px 40px;
+    margin: 0;
+
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+}
+
+
+.titulo{
+    color: rgb(89, 95, 43);
+    text-decoration: underline;
+}    
+
+h1 {
+    margin: 0;
+    font-size: 3em;
+    text-align: center;
+    font-size: 100px;
+    font-style: italic;
+}    
+
+.subtitulo{
+    font-style: italic;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 20px;
+    color: rgb(138, 105, 105);
+}    
+
+
+.nav-list li{
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    text-decoration: none;
+    margin: 15px;
+    padding: 0;
+    font-size: 20px;
+}    
+
+main{
+    background-color: rgba(255, 255, 255, 0.786)
+    
+}
+
+.enlace{
+    font-weight: bold;
+}
+
+a{
+    color: rgb(58, 66, 35);
+    text-decoration: none;
+}
+a:hover{
+    scale: 1.5;
+    background-color: blanchedalmond;
+}
+
+.parrafo-1{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    color: rgb(87, 30, 30);
+    font-size: 30px;
+    padding: 120px;
+}
+
+.clases{
+    color: rgb(50, 46, 20);
+    font-style: italic;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+}
+
+.metodos{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 30px;
+    color: rgb(49, 18, 18);
+}
+.grid{
+    display: grid;
+    grid-template-areas:
+    "v1 v2 v3"
+    "v4 v4 v5"
+    "v7 v8 v9";
+    gap: 25px;
+    align-items: baseline;
+    justify-content: start;
+    align-content: center;
+    justify-items: stretch;
+} 
+.f{
+    height: 30vh;
+    width: auto;
+}
+
+.t{
+    color: rgb(172, 166, 128);
+    font-style: italic;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+}
+.s{
+    color: gray;
+    font-style: italic;
+    text-align: left;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+
+/* .section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.h:hover{
+    scale: 1.5;
+}
+.v{
+    height: 30vh;
+    width: auto;
+}
+.v:hover{
+    scale: 1.5;
+}
+.f1{
+    grid-area: f6;
+}
+.f2{
+    grid-area: f7;
+}
+.f3{
+    grid-area: v1;
+}
+.f4{
+    grid-area: f4;
+}
+.f5{
+    grid-area: f5;
+}
+.f6{
+    grid-area: f1;
+}
+.f7{
+    grid-area: f2;
+}
+.v1{
+    grid-area: f3;
+}
+.v2{
+    grid-area: v2;
+} */
+
+.direction{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.maps{
+    width: 70%;
+    height: auto;
+    margin: 10px;
+} 
+
+.nota{
+    color: rgb(42, 42, 135);
+    font-size: 10px;
+    font-family:'Times New Roman', Times, serif
+}
+
+.form{
+    margin: 20px;
+}
+
+
+p{
+    color: white;
+    text-align: center;
+}
+
+.pie{
+    padding: 20px;
+    margin-top: 10px;
+    background-color: rgb(106, 76, 30);
+    font-size: 20px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.redes{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0;
+    }
+
+.icon{
+    text-decoration: none;
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    background-color: transparent;
+}
+
+.titulo-p{
+    font-size:100px;
+    color: rgb(90, 90, 161)
+}
+
+.p-principal{
+    color: darkolivegreen;
+    text-align: center;
+    font-size: 30px;
+}
+
+.ristretto{
+    border-radius: 20%;
+    width:30vw;
+    height: auto;
+}
+
+.producto{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: rgb(109, 83, 27);
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.explicacion{
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font: italic;
+    font-size: 15px;
+    text-align: center;
+}
+
+.espresso{
+    border-radius: 20%;
+    height: 50vh;
+    width: auto;
+}
+
+.latte{
+    border-radius: 20%;
+    width: 75vh;
+    height: 50vh;
+}
+
+.ice{
+    border-radius: 20%;
+    width: 20vw;
+    height: auto;
+}
+
+button{
+    margin: 10px 0 15px 20px;
+    padding: 10px 5px 10px 5px;
+    background-color: rgb(144, 165, 107);
+    font-style: oblique;
+}
+
+.qr{
+    width:auto ;
+    height: 30vh;
+    border-color: black;
+    justify-content: right;
+    display: flex;
+}
+
+.carta{
+    font-size: large;
+    color: black;
+    justify-content: left;
+    text-align: left;
+}
+
+.reseña{
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font: italic;
+    font-size: 15px;
+    text-align: center;
+}
+
+.nombre{
+    color: brown;
+}
+
+.foto-mujer{
+    border-radius: 20%;
+    width:30vw;
+    height: auto;
+}
+
+.foto-mujer2{
+    border-radius: 20%;
+    height: 50vh;
+    width: auto;
+}
+
+.foto-hombre{
+    border-radius: 20%;
+    width: 20vw;
+    height: 45vh;
+}
+
+.puesto{ 
+    font-size: large;
+    color: black;
+    justify-content: left;
+    text-align:center;
+}
+
+.foto-camarero{
+    border-radius: 20%;
+    width:20vw;
+    height: auto;
+}
+
+.foto-barista{
+    border-radius: 20%;
+    width:30vw;
+    height: auto;
+}
+
+.foto-recepcionista{
+        border-radius: 20%;
+    width:30vw;
+    height: auto;
+}
+
+.foto-encargado{
+        border-radius: 20%;
+    width:30vw;
+    height: auto;
+}
+
+.detalles{
+    font-size: large;
+    color: black;
+    justify-content: center;
+    text-align:center;
+}
+
+.inicio{
+    position: sticky;
+    top:0px;
+}
