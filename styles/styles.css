@@ -429,16 +429,15 @@ button{
     margin: 10px 0 10px 30%;
 }
 
+
 @media screen and (max-width: 426px) {
-    main{
-        max-width: max-content;
-        margin: 0;
-        border-radius: inherit;
-        }
 
-    
+.acocordion-img{
+    width: 35%;
+    height: auto;
+    margin: 10px 0 10px 30%;
 }
-
+}
 
 
 /* .reseña{
