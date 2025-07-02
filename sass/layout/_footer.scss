@@ -1,0 +1,25 @@
+@use "../bases/variables";
+footer{
+        padding: 20px;
+        margin: 0;
+        background-color: rgb(106, 76, 30);
+        color: antiquewhite;
+        font-size: 20px;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        .redes{
+            display: flex;
+            justify-content: space-evenly;
+            list-style-type: none;
+            margin-top: 10px;
+            padding: 0;
+            .icon{
+                text-decoration: none;
+                width: 35px;
+                height: 35px;
+                object-fit: contain;
+                background-color: transparent;
+            }
+        }
+}

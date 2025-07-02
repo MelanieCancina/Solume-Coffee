@@ -1,0 +1,78 @@
+@use "../bases/variables";
+header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #e7d7c1;
+        margin: 0;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        #logo{
+            width: 100px;
+            height: auto;
+        }
+        .titulo{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: rgb(89, 95, 43);
+            text-decoration: underline;
+            font-size: 5rem;
+            font-style: italic;
+            text-decoration: underline;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }   
+        .subtitulo{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-size: 1rem;
+            color: rgb(138, 105, 105);
+        }
+        .nav-list li {
+            list-style-type: none;
+            a {
+                font-family: 'Times New Roman', Times, serif;
+                color: rgb(58, 66, 35);
+                font-weight: bold;
+                font-size: 20px;
+                text-decoration: none;
+                padding: 8px 10px;
+                display: inline-block;
+                margin-right: 5rem;
+            }
+            &:hover {
+                background-color: rgba(196, 147, 64, 0.497);
+                scale: 1.5;
+                border-radius: 10px;
+                padding: 10px;
+                transform: scale(0.8);
+            }
+        }
+        @include variables.mobile{
+                    position: static;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0;
+                    width: 100%;
+                    #logo{
+                    width: 50px;
+                    }
+                    .titulo{
+                    font-size: 2rem;
+                    }
+                    .subtitulo{
+                    margin: 7%;
+                    }
+                    .h1{
+                    font-size: 50px;
+                    }
+                    .a:hover{
+                    background-color: rgba(196, 147, 64, 0.497);
+                    scale: 1.5;
+                    border-radius: 10px;
+                    padding: 10px;
+                    transform: scale(0.8)
+                    }
+                }
+        }
+

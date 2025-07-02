@@ -1,0 +1,136 @@
+@use "../bases/variables";
+.page{
+    position: static;
+}
+main{
+    .destacados{
+        @extend .destacados;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+    .puesto {
+    background-color: #b8cb7e;
+    padding: 20px;
+    border: 1px solid #32452a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(69, 7, 7);
+    }
+    .explicacion{
+        margin: 10%;
+        margin-bottom: 10%;
+        font-size: 14px;
+        color: rgb(64, 75, 0);
+        border-style: double;
+    }
+    .foto {
+        @include variables.fotos(25vw, auto, 15px, 10px 0 10px 25%);
+}
+    .subtitulo{
+        margin: 5%;
+        font-family: 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-size: 40px;
+        color: rgb(98, 105, 14);
+        text-decoration: none;
+    }
+    .animate__animated.animate__pulse {
+        animation-duration: 2s;
+        animation-iteration-count: infinite;    
+    }
+        .texto{
+        text-align: center;
+        font-weight: 10px;
+        font-size: 15px;
+        border-style:groove;
+    }
+        form {
+        margin-top: 5%;
+        margin-bottom: 30px;
+        padding: 30px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #fff8e1; 
+        border-radius: 10px;
+        text-align: center;
+            label, input, select {
+            padding: 12px;
+            margin: 10px auto;
+            border: 1px solid #d2a679;
+            border-radius: 5px;
+            font-size: 10px;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        option {
+        background-color: #ffe6e6; 
+        color: #282106; 
+        font-size: 10px;
+        }
+    option:hover{
+        background-color: burlywood;
+    }
+    select:hover{
+        background-color: #e6efcc;
+    }
+}
+    .button-secondary{
+        @include variables.button(10px, rgb(213, 154, 255), italic) 
+    }
+    .button-secondary:hover{
+        background-color: #2f0259;
+        color: bisque;
+    }
+    button {
+        background-color: #b8860b;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    button:hover {
+        background-color: #2d0c03;
+        color: #d2a679;
+    }
+    
+    @include variables.mobile{
+        .grid {
+        grid-template-columns: 1fr;
+        }
+        .explicacion {
+        font-size: 13px;
+        padding: 10px;
+        }
+        .foto{
+            width: 40vw;
+            height: auto;
+            text-align: center;
+            justify-content: center;
+            margin-left: 30%;
+        }
+        .subtitulo{
+            font-size: 25px;
+            text-decoration: overline underline;
+            margin: 15%;
+        }
+        .form {
+        padding: 20px;
+        font-size: 14px;
+        }
+        label,input, select {
+            width: 85%;
+            font-size: 15px;
+            margin: 25px;
+        }
+        button {
+            width: 80%;
+            margin-bottom: 15px;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@use "../bases/variables";
+main{
+.destacados{ 
+            @extend .destacados;
+        }
+.acocordion-img{
+    width: 15%;
+    height: auto;
+    margin: 10px 0 10px 30%;
+}
+.direction{
+    @extend .direction;
+}
+@include variables.mobile{
+.acocordion-img{
+    width: 35%;
+    height: auto;
+    margin: 10px 0 10px 30%;
+}
+.maps{
+        width: 100%;
+        height: auto;
+    }
+}
+}

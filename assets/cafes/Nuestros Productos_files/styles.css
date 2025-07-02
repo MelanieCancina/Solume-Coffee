@@ -239,12 +239,9 @@ main{
 
 
 @media screen and (max-width: 426px) {
- 
-    .header {
+    header {
     display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-end;
-    justify-content: space-evenly;
+    flex-direction: column;
     margin: 0;
     width: 100%;
     flex-wrap: wrap;

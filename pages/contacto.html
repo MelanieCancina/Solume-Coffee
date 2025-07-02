@@ -2,14 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=ç, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="shortcut icon" href="../assets/logos/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 </head>
 
 <body>
-    <header class="header principal">
+    <header class="page">
     <a href="../index.html"><img src="../assets/logos/logo.png" alt="logo de solume cafe"></a>
     <h1 class="titulo">Contacto</h1>
         <p class="subtitulo">"El arte del café en cada sorbo"</p>
@@ -20,90 +24,65 @@
                 </li>
 
                 <li class="enlace li">
-                    <a href="../pages/nosotros.html">Sobre Nosotros</a>
+                    <a href="../pages/productos.html">Nuestros Productos</a>
                 </li>
 
                     <li class="enlace li ">
-                        <a href="../pages/reseñas.html">Nuestros Clientes</a> 
+                        <a href="../pages/nosotros.html">Sobre Nosotros</a> 
                     </li>
 
                     <li class="enlace li">
-                        <a href="../pages/contacto.html">Contacto</a>
+                        <a href="../pages/resenas.html">Nuestros Clientes</a>
                     </li>
                 </ul>
             </nav></header>
 <main>
-        <form class="form">
-            <label>Nombre:</label>    
-            <input type="text" placeholder="Carol" >          
-        
-            <label>Apellido:</label>
-            <input type="text" placeholder="Stone"> 
+    <section>
+    <h1 class="destacados">Puestos disponibles</h1>
+    <section class="grid">
+    <details>
+        <summary class="puesto">Camarero/a</summary>
+        <p class="explicacion">Buscamos personas apasionadas por el servicio al cliente y el buen café. Como camarero/a en Solume Coffee, serás el rostro de nuestra marca, atendiendo a nuestros clientes con una sonrisa y asegurando una experiencia única en cada visita.</p>
+        <img src="../assets/puestos/camarero.jpg" alt="camarero" class="foto">
 
-            <label>Mail:</label>
-            <input type="text" placeholder="carol.stone@gmail.com">
-
-        <select>
-            Puesto
-            <option>Camarera/o</option>
-            
-            <option>Barista</option>
-
-            <option>Recepcionista</option>
-            
-            <option>Encargada/o</option>
-            <img src="../assets/encargado.jpg" alt="encargado">
+    </details>
+    <details>
+        <summary class="puesto">Barista</summary>
+        <p class="explicacion"> Amas el café y su preparación perfecta? En Solume Coffee, estamos en la búsqueda de baristas que compartan nuestra pasión por el café de especialidad. Si te encanta crear arte latte y conocer los distintos métodos de extracción, ¡queremos conocerte!</p>
+        <img src="../assets/puestos/barista.jpg" alt="barista" class="foto">
+    </details>
+    <details>
+        <summary class="puesto">Recepcionista</summary>
+        <p class="explicacion"> ¿Tienes habilidades para conectar con las personas? En Solume Coffee, valoramos la calidez y la buena energía para recibir a nuestros clientes. Buscamos una persona organizada, amable y con excelentes habilidades de comunicación para ser la primera sonrisa que nuestros visitantes encuentren.</p>
+        <img src="../assets/puestos/recepconista.jpg" alt="recepcionista" class="foto">
+    </details>
+    <details>
+        <summary class="puesto">Encargado/a</summary>
+        <p class="explicacion"> Si tienes experiencia en gestión de cafeterías y liderazgo de equipos, esta es tu oportunidad. En Solume Coffee, buscamos un/a encargado/a que comparta nuestra visión de calidad y excelencia en el servicio, asegurando el correcto funcionamiento de cada área.</p>
+        <img src="../assets/puestos/encargado.jpg" alt="encargado" class="foto">
+    </details>
+    </section>
+    <h2 class="subtitulo animate__animated animate__pulse"> Únete a Nuestro Equipo</h2>
+    <p class="texto"> En Solume Coffee, buscamos personas apasionadas, con ganas de crecer y de ofrecer experiencias únicas a nuestros clientes. Si amas el café y quieres formar parte de un proyecto en constante evolución, ¡este es tu lugar!  Consulta nuestras oportunidades y descubre cómo puedes unirte a nuestra familia. </p>
+    <form>
+        <label>Nombre:</label>
+        <input type="text" placeholder="Carol" >
+        <label>Apellido:</label>
+        <input type="text" placeholder="Stone">
+        <label>Mail:</label>
+        <input type="email" placeholder="carol.stone@gmail.com">
+        <label>Puesto:</label>
+        <select class="option">
+        <option>Camarera/o</option>
+        <option>Barista</option>
+        <option>Recepcionista</option>
+        <option>Encargada/o</option>
         </select>
-
+        <button class="button-secondary">Cargar CV</button>
         <button>Enviar</button>
-        <section>
-            <p class="subtitulo">🔹 Únete a Nuestro Equipo</p>
-            <p class="explicacion">
-                En Solume Coffee, buscamos personas apasionadas, con ganas de crecer y de ofrecer experiencias únicas a nuestros clientes. Si amas el café y quieres formar parte de un proyecto en constante evolución, ¡este es tu lugar!
-
-                🔍 Consulta nuestras oportunidades y descubre cómo puedes unirte a nuestra familia.
-            </p>
-        </section>
-
-        </form>
-        <section>
-            <img src="../assets/camarero.jpg " alt="camarero" class="foto-camarero">
-            <p class="puesto">Camarero/a</p>
-            <summary>
-                <details class="explicacion">Buscamos personas apasionadas por el servicio al cliente y el buen café. Como camarero/a en Solume Coffee, serás el rostro de nuestra marca, atendiendo a nuestros clientes con una sonrisa y asegurando una experiencia única en cada visita.</details>
-            </summary>
-        </section>
-        <section>      
-            <img src="../assets/barista.jpg" alt="barista" class="foto-barista">
-            <p class="puesto">Barista</p>
-            <summary>
-                <details class="explicacion">
-                Amas el café y su preparación perfecta? En Solume Coffee, estamos en la búsqueda de baristas que compartan nuestra pasión por el café de especialidad. Si te encanta crear arte latte y conocer los distintos métodos de extracción, ¡queremos conocerte!
-                </details>
-            </summary>
-
-        </section>
-        <section>
-            <img src="../assets/recepconista.jpg" alt="recepcionista" class="foto-recepcionista">
-            <p class="puesto">Recepcionista</p>
-            <summary>
-                <details class="explicacion">
-                ¿Tienes habilidades para conectar con las personas? En Solume Coffee, valoramos la calidez y la buena energía para recibir a nuestros clientes. Buscamos una persona organizada, amable y con excelentes habilidades de comunicación para ser la primera sonrisa que nuestros visitantes encuentren.
-                </details>
-            </summary>
-
-        </section>
-        <section >
-            <img src="../assets/encargado.jpg" alt="encargado" class="foto-encargado">
-            <p class="puesto">Encargado/a</p>
-            <summary>
-                <details class="explicacion">
-                    Si tienes experiencia en gestión de cafeterías y liderazgo de equipos, esta es tu oportunidad. En Solume Coffee, buscamos un/a encargado/a que comparta nuestra visión de calidad y excelencia en el servicio, asegurando el correcto funcionamiento de cada área.
-                </details>
-            </summary>
-
-        </section>
-</main>  
+    </form>
+    </section>
+</main>
     <footer class="pie">
         <p>☕ "Donde cada taza cuenta una historia."</p>
     <p> 2025 Solume Coffee. Todos los derechos reservados.</p>
@@ -111,17 +90,17 @@
     <ul class="redes">
         <li>
             <a href="https://www.whatsapp.com/">
-                <img src="../assets/whatsapp.png" alt="whatsapp" class="icon whatsapp"></a>
+                <img src="../assets/logos/logo wh.webp" alt="whatsapp" class="icon whatsapp"></a>
             
         </li>
         <li>
             <a href="https://www.instagram.com/">
-                <img src="../assets/insta.png" alt="instagram" class="icon instagram"></a>
+                <img src="../assets/logos/insta.png" alt="instagram" class="icon instagram"></a>
         
         </li>
         <li>
             <a href="https://www.facebook.com/">
-                <img src="../assets/face.png" alt="facebook" class="icon facebook"></a>
+                <img src="../assets/logos/face.png" alt="facebook" class="icon facebook"></a>
             
         </li>
     </ul>

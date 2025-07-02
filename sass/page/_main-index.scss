@@ -1,0 +1,139 @@
+@use "../bases/variables";
+main{
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 0;
+        .destacados{
+            @extend .destacados;
+        }
+        .metodo-filtro{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: underline;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 3rem;
+            color: rgb(11, 48, 48);
+            margin: 5%
+        }
+        .contenedor {   
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+            padding: 20px;
+            article{
+                background-color: rgba(255, 255, 255, 0.8);
+                border: 3px;
+                border-style: dotted;
+                border-radius: 20px;
+                text-align: center;
+                padding: 15px;
+                .metodos-filtrados{
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    font-size: 25px;
+                    font-weight: bold;
+                    color: rgb(65, 77, 2);
+                    text-decoration: underline;
+                    margin-bottom: 10px;
+                    margin-top: 15px;
+                }
+                .metodo{
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    font-style: italic;
+                    font-size: 35px;
+                    color: rgb(49, 18, 18);
+                    text-decoration: none;
+                    margin-top: 15px;
+                    margin-bottom: 10px;
+                }
+                .filtros{
+                    width: 100%;
+                    height: auto;
+                    max-width: 300px;
+                    margin: 0 auto;
+                    display: block;
+                    border-radius: 10px;
+                }
+                .detalle{
+                    color: grey;
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    font-size: 1rem;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .direction{
+            @extend .direction;
+            .maps{
+                @extend .maps;
+            }
+            .nota{
+                margin-left: 10px;
+                color: rgb(42, 42, 135);
+                font-size: 15px;
+                font-family:'Times New Roman', Times, serif;
+            }
+        }
+        .carta{
+            position: fixed;
+            bottom: 15px;
+            right: 20px;
+            width: 100px;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 3);
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            .qr{
+                width:auto ;
+                height: 30vh;
+                border-color: black;
+                justify-content: right;
+                display: flex;
+            }
+        }
+    @include variables.mobile{
+        main{
+        max-width: max-content;
+        margin: 20px;
+        border-radius: inherit;
+        margin-top: 20%;
+    }
+    .contenedor {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 10px;
+    }
+    .metodo-filtro {
+        font-size: 30px;
+        text-align: center;
+    }
+    .metodo, .detalle {
+        font-size: 18px;
+    }
+    .filtros {
+        width: 90%;
+        height: auto;
+        margin-left: 0;
+    }
+    .parrafo-1 {
+        font-size: 20px;
+        padding: 20px;
+        margin-top: 120px;
+    }
+    .maps{
+        width: 100%;
+        height: auto;
+    }
+    .qr {
+        width: 60%;
+    }
+    .carta {
+        display: none;
+        }
+    }
+}

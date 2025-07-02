@@ -1,0 +1,66 @@
+@use "../bases/variables";
+
+main {
+    .destacados {
+        @extend .destacados;
+        }
+    .reseñas{
+        text-align: center;
+        margin: 2rem auto;
+        padding: 0 1rem;
+        max-width: 1200px;
+        }
+    .reseñas-grid {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1.5rem;
+    }
+    .card {
+        background-color: #fffdf6;
+        border: 1px solid #d9c1a1;
+        border-radius: 10px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+            &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            }
+            .card-img-top {
+            height: 250px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            }
+            .card-body {
+            padding: 20px;
+            }
+            .card-title {
+                color: #5a3825;
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+            .card-text {
+                font-style: italic;
+                color: #3d2a1e;
+            }
+        }
+    button {
+        margin-top: 30px;
+        padding: 10px 20px;
+        font-size: 1.1rem;
+        color: #5a3825;
+        border: 2px solid #5a3825;
+        background-color: transparent;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+            &:hover {
+            background-color: #5a3825;
+            color: #fff8e1;
+            }
+    }
+    @include variables.mobile{
+    .reseñas-grid{
+        grid-template-columns: 1fr;
+        padding: 30px 10px;
+        }
+    }
+}
