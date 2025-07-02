@@ -6,6 +6,7 @@ main{
         margin-bottom: 0;
         .destacados{
             @extend .destacados;
+            margin-top: 15%;
         }
         .metodo-filtro{
             display: flex;

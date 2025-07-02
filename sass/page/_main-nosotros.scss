@@ -3,6 +3,14 @@ main{
 .destacados{ 
             @extend .destacados;
         }
+.accordion-header{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: bisque;
+}
+.accordion-body{
+    background-color: rgb(255, 231, 201);
+    font-family: 'Times New Roman', Times, serif
+}
 .acocordion-img{
     width: 15%;
     height: auto;
